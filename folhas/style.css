@@ -4,11 +4,11 @@
 
 /*Raíz da árvore do documento, ou variáveis globais que servirão para TODO o documento. Todas as variáveis em CSS, iniciam com dois traços --*/
 :root {
-    --cor0: #09278F;
-    --cor1: #4F8F09;
-    --cor2: #8F2609;
-    --cor3: #B71E17;
-    --cor4: #8FA8FF;
+    --cor0: #FA2B1E;
+    --cor1: #FA781E;
+    --cor2: #FA531E;
+    --cor3: #FA1E76;
+    --cor4: #FA1E76;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque01: 'Rochester', cursive;
@@ -38,7 +38,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center; /* alinha ao centro */
-    background-color: #09278F;
+    background-color: var(--cor0);
     position: fixed;  /* Position: fixed permite fixar o menu no alto da tela mesmo que rolarmos a tela para baixo, nosso menu permanece visível na tela */
     padding-left: 30rem;
 }
@@ -78,16 +78,16 @@ html {
 }
 
 .content .list-menu li a:hover {
-    background-color: #0f2577;
-    border-bottom: 4px solid #63942f;
-    color: #63942f;
+    background-color: #f7574b;
+    border-bottom: 4px solid #FA1E76;
+    color: rgb(199, 18, 6);
 }
 /* Estiliza first-section */
 
 
 .first-section {    
     height: 100vh;
-    background-image: linear-gradient(rgba(10, 39, 143, 0.5), rgba(10, 39, 143, 0.5)), url(/imagens/fundopizza900x600.jpg);
+    background-image: linear-gradient(rgba(250, 81, 30, 0.233), rgba(250,83,30, 0.233)), url(/imagens/fundopizza900x600.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,14 +107,14 @@ html {
 }
 
 .first-section h1 {
-    color: #B71E17;
+    color: #FA2B1E;
     font-size: 6rem;
     font-weight: 150;
     margin-bottom: 1rem;
 }
 
 .first-section h2 {
-    color: #afbef5;
+    color: var(--cor4);
     font-size: 3rem;
     font-weight: 150;
     margin-bottom: 3rem;
@@ -124,9 +124,9 @@ html {
     width: 230px;
     height: 60px;
     cursor: pointer;
-    background-color: #8F2609;
+    background-color: var(--cor2);
     border-radius: 10px;
-    color: #04103a;
+    color: white;
     margin-top: 5rem;
     transition: all 400ms ease-in;
 }
@@ -140,7 +140,51 @@ html {
 .btn {
     width: 400px;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
+}
+/* Sobre nós */
+.sobre-nos {
+    background-color: var(--cor0);
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img {
+    width: 600px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    box-shadow: 10px 10px 10px rgba(131, 13, 60, 0.589);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 600px;
 }
 
 
