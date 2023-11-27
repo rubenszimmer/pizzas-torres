@@ -8,13 +8,13 @@
     --cor1: #FA781E;
     --cor2: #FA531E;
     --cor3: #FA1E76;
-    --cor4: #FA1E76;
-
+    --cor4: #FA9E1E ;
+    
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque01: 'Rochester', cursive;
     --fonte-destaque02: 'Sofia', cursive;
 }
-
+/* Reseta o projeto, zerando Todas as margens e paddings */
 * {
     margin: 0px;
     padding: 0px;
@@ -28,16 +28,16 @@
 html {
     width: 100vw;
     height: 100vh;
-    font-size: 62.5%;
+    font-size: 62.5%;  /* Prática responsiva */
     overflow-x: hidden;  /* Esconde a barra de rolagem horizontal*/
 }
 /* Estilizando nosso Menu*/
 .content {
-    width: 100vw;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; /* alinha ao centro */
+    width: 100vw;  /* Pega toda a largura da página */
+    height: 70px;  /* Altura da página */
+    display: flex;  /* O logo, o h3 e o list-menu ficam um ao lado do outro */
+    justify-content: space-around;  /* Coloca um espaçamento entre os itens. */
+    align-items: center; /* alinhar os itens ao centro na parte vertical  */
     background-color: var(--cor0);
     position: fixed;  /* Position: fixed permite fixar o menu no alto da tela mesmo que rolarmos a tela para baixo, nosso menu permanece visível na tela */
     padding-left: 30rem;
@@ -94,9 +94,9 @@ html {
     background-position-x: 10px;
     background-position-y: 2px;
     width: 100vw ; 
-    display: flex;  /* Os ítens ficam lado a lado */
+    display: flex;  /* Os ítens ficam um ao lado do outro */
     flex-direction: column;  /* Queremos um elemento flex, mas queremos que os ítens fiquem em forma de colunas */
-    justify-content: center;
+    justify-content: center; /* Está alinhando na na horizontal, mas na vertical, porque mudamos o direcionamento com flex-direction: column */
     align-items: center;
 }
 
